@@ -8,7 +8,7 @@ import { RiInstagramLine, RiWhatsappLine } from '@remixicon/vue'
       <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
           <div class="lg:max-w-lg">
-            <h1 class="text-3xl font-semibold text-white lg:text-4xl">
+            <h1 class="text-3xl font-semibold text-white lg:text-4xl pt-4 sm:pt-1">
               Lorem ipsum dolor <br />
               your <span class="text-blue-500">Personal</span>
             </h1>

@@ -55,7 +55,7 @@ const isOpen = ref(false)
           >
           <a
             class="my-2 transition-colors duration-300 transform text-gray-200 hover:text-blue-400 md:mx-4 md:my-0 font-semibold"
-            href="#"
+            href="#planos"
             >Planos</a
           >
           <a
@@ -65,7 +65,7 @@ const isOpen = ref(false)
           >
           <a
             class="my-2 transition-colors duration-300 transform text-gray-200 hover:text-blue-400 md:mx-4 md:my-0 font-semibold"
-            href="#"
+            href="#sobre"
             >Sobre</a
           >
         </div>
