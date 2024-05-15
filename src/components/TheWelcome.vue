@@ -7,7 +7,7 @@ import { RiWhatsappLine } from '@remixicon/vue'
     class="bg-no-repeat bg-center bg-cover"
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(/public/background.jpeg);
+        url(/background.jpeg);
     "
   >
     <div class="container px-6 mx-auto">

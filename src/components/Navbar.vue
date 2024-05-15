@@ -9,7 +9,7 @@ const isOpen = ref(false)
     class="relative bg-gray-800 bg-cover"
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(/public/background.jpeg);
+        url(/background.jpeg);
     "
   >
     <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
