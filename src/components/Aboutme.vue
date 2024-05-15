@@ -6,7 +6,7 @@
       <p class="text-xl font-medium text-blue-500">Sobre mim</p>
 
       <h1 class="mt-2 text-2xl font-semibold text-gray-800 capitalize lg:text-3xl">
-        What clients saying
+        Rykelme Lucas
       </h1>
 
       <main class="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
@@ -27,10 +27,13 @@
               <p class="text-blue-200">Personal Trainer</p>
             </div>
 
-            <p class="mt-4 text-lg leading-relaxed text-white md:text-xl">
-              “Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore quibusdam ducimus
-              libero ad tempora doloribus expedita laborum saepe voluptas perferendis delectus
-              assumenda”.
+            <p class="mt-4 leading-relaxed text-white font-light">
+              Olá, sou Rykelme Lucas, Personal Trainer e Profissional de Educação Física. Com vasta
+              experiência em diversas áreas, incluindo musculação, reabilitação de lesões na lombar,
+              no joelho e na coluna, além de emagrecimento, estou aqui para ajudar você a atingir
+              seus objetivos de forma segura e eficaz. Minha paixão pela saúde e pelo bem-estar me
+              motiva a oferecer um treinamento personalizado e especializado, adaptado às suas
+              necessidades individuais. Vamos juntos alcançar seus objetivos e transformar sua vida!
             </p>
           </div>
         </div>

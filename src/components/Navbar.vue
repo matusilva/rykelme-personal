@@ -5,13 +5,19 @@ const isOpen = ref(false)
 </script>
 
 <template>
-  <nav class="relative bg-gray-800">
+  <nav
+    class="relative bg-gray-800 bg-cover"
+    style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(/public/background.jpeg);
+    "
+  >
     <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
       <div class="flex items-center justify-between">
         <a href="#">
-          <img class="w-auto h-20" src="/logo.png" alt="" />
+          <img class="w-auto h-14" src="/logo.png" alt="" />
         </a>
-        <div class="flex lg:hidden">
+        <div class="flex md:hidden">
           <button
             @click="isOpen = !isOpen"
             type="button"
@@ -45,7 +51,7 @@ const isOpen = ref(false)
       </div>
       <div
         :class="{ block: isOpen, hidden: !isOpen }"
-        class="absolute inset-x-0 z-20 w-full bg-gray-800 px-6 py-4 transition-all duration-300 ease-in-out md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center"
+        class="absolute inset-x-0 z-20 w-full bg-black opacity-95 px-6 py-4 transition-all duration-300 ease-in-out md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center"
       >
         <div class="flex flex-col md:flex-row md:mx-6">
           <a
@@ -60,13 +66,18 @@ const isOpen = ref(false)
           >
           <a
             class="my-2 transition-colors duration-300 transform text-gray-200 hover:text-blue-400 md:mx-4 md:my-0 font-semibold"
+            href="#como-funciona"
+            >Como funciona</a
+          >
+          <a
+            class="my-2 transition-colors duration-300 transform text-gray-200 hover:text-blue-400 md:mx-4 md:my-0 font-semibold"
             href="#"
             >Contato</a
           >
           <a
             class="my-2 transition-colors duration-300 transform text-gray-200 hover:text-blue-400 md:mx-4 md:my-0 font-semibold"
             href="#sobre"
-            >Sobre</a
+            >Sobre mim</a
           >
         </div>
       </div>
