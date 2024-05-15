@@ -1,6 +1,7 @@
 <script setup>
 import { RiCheckLine } from '@remixicon/vue'
 </script>
+
 <template>
   <section id="como-funciona" class="bg-gray-900">
     <div class="container flex flex-col px-6 mx-auto space-y-6 h-full py-16 lg:h-[32rem]">
