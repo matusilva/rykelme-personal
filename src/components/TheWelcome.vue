@@ -88,7 +88,7 @@ import { RiWhatsappLine } from '@remixicon/vue'
           </div>
         </div>
         <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-          <img class="w-full h-full" src="/profile3.png" alt="profile" />
+          <img class="w-full h-full lg:max-w-sm" src="/profile.png" alt="profile" />
         </div>
       </div>
     </div>
