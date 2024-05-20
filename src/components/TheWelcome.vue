@@ -14,7 +14,7 @@ import { RiWhatsappLine } from '@remixicon/vue'
       <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
           <div class="lg:max-w-lg">
-            <h1 class="text-3xl font-semibold text-white lg:text-4xl pt-4 sm:pt-1">
+            <h1 class="text-3xl font-semibold text-white lg:text-4xl pt-4 sm:pt-1 text-shadow">
               CONSULTORIA COMPLETA TREINAMENTO PERSONALIZADO E ACOMPANHAMENTO <br />
               <span class="text-blue-500">ESPECIALIZADO</span>
             </h1>
@@ -94,3 +94,13 @@ import { RiWhatsappLine } from '@remixicon/vue'
     </div>
   </header>
 </template>
+
+<style scoped>
+.text-shadow {
+  text-shadow:
+    0 0 5px #000,
+    0 0 10px #000,
+    0 0 15px #153e9d,
+    0 0 20px #153e9d; /* Azul claro */
+}
+</style>

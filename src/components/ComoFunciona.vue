@@ -3,10 +3,19 @@ import { RiCheckLine } from '@remixicon/vue'
 </script>
 
 <template>
-  <section id="como-funciona" class="bg-gray-900">
+  <section
+    id="como-funciona"
+    class="bg-no-repeat bg-cover bg-right-top"
+    style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+        url(/background-woman.jpg);
+    "
+  >
     <div class="container flex flex-col px-6 mx-auto space-y-6 h-full py-16 lg:h-[32rem]">
       <div class="w-full">
-        <h1 class="text-3xl font-semibold tracking-wide text-white lg:text-4xl text-center">
+        <h1
+          class="text-3xl font-semibold tracking-wide text-white lg:text-4xl text-center text-shadow"
+        >
           COMO FUNCIONA A CONSULTORIA
         </h1>
         <div class="grid gap-6 mt-8 sm:grid-cols-2">
@@ -43,8 +52,8 @@ import { RiCheckLine } from '@remixicon/vue'
           <div class="flex items-center -px-3 text-gray-200">
             <RiCheckLine />
             <span class="mx-3"
-              >Suporte via WhatsApp 24 horas por dia para tirar dúvidas e oferecer apoio
-              constante.</span
+              >Suporte via <span class="green-whatsapp">WhatsApp</span> 24 horas por dia para tirar
+              dúvidas e oferecer apoio constante.</span
             >
           </div>
 
@@ -60,3 +69,20 @@ import { RiCheckLine } from '@remixicon/vue'
     </div>
   </section>
 </template>
+
+<style scoped>
+.text-shadow {
+  text-shadow:
+    0 0 10px #000,
+    0 0 20px #000,
+    0 0 30px #00aaff,
+    0 0 40px #00aaff,
+    0 0 70px #00aaff,
+    0 0 80px #000,
+    0 0 100px #000,
+    0 0 150px #fff;
+}
+.green-whatsapp {
+  color: #27d367;
+}
+</style>
