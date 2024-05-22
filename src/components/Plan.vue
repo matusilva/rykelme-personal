@@ -8,10 +8,10 @@ const activeTab = ref(tabs[1])
 </script>
 
 <template>
-  <section class="bg-gray-900">
+  <section id="planos" class="bg-gray-900">
     <div class="container px-6 py-8 mx-auto">
       <div class="max-w-2xl p-1.5 mx-auto overflow-hidden rounded-lg bg-gray-800">
-        <div class="grid gap-3 md:grid-cols-3">
+        <div class="grid gap-3 sm:grid-cols-3">
           <button
             v-for="(tab, key) in tabs"
             :key="key"

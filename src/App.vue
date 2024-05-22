@@ -1,19 +1,21 @@
 <script setup>
-import TheWelcome from '@/components/TheWelcome.vue'
 import Navbar from '@/components/Navbar.vue'
+import TheWelcome from '@/components/TheWelcome.vue'
+import HowItWorks from './components/HowItWorks.vue'
+import BeforeAfter from './components/BeforeAfter.vue'
 import Aboutme from './components/Aboutme.vue'
 import Plan from './components/Plan.vue'
 import Footer from './components/Footer.vue'
-import ComoFunciona from './components/ComoFunciona.vue'
 </script>
 
 <template>
   <header>
     <Navbar />
     <TheWelcome />
-    <ComoFunciona />
-    <Aboutme />
+    <HowItWorks />
+    <BeforeAfter />
     <Plan />
+    <Aboutme />
     <Footer />
   </header>
 </template>

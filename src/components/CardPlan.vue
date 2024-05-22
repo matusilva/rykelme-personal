@@ -5,15 +5,15 @@ const props = defineProps(['activeTab'])
 <template>
   <div
     v-if="props.activeTab === 'Prata'"
-    class="flex flex-col items-center justify-center mt-16 space-y-6 md:items-start md:-mx-5 md:space-y-0 md:flex-row"
+    class="flex flex-col items-center justify-center mt-16 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
   >
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
         <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">1x R$200,00</h4>
+        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">1x R$300,00</h4>
         <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">1x R$200,00</h4>
         <p class="mt-4 text-gray-500 dark:text-gray-300">6 semanas de treino</p>
       </div>
@@ -98,12 +98,12 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
         <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">3x R$137,00</h4>
+        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">3x R$200,00</h4>
         <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">3x R$137,00</h4>
         <p class="mt-4 text-gray-500 dark:text-gray-300">12 semanas de treino</p>
       </div>
@@ -188,14 +188,14 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <p class="py-2 text-sm text-center text-white uppercase bg-blue-500">Mais Recomendado</p>
       <div class="px-6 py-4">
         <div class="text-center">
           <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Semestral</p>
           <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-          <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$97,00</h4>
+          <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$150,00</h4>
           <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">6x R$97,00</h4>
           <p class="mt-4 text-gray-500 dark:text-gray-300">24 semanas de treino</p>
         </div>
@@ -283,15 +283,15 @@ const props = defineProps(['activeTab'])
 
   <div
     v-if="props.activeTab === 'Ouro'"
-    class="flex flex-col items-center justify-center mt-16 space-y-6 md:items-start md:-mx-5 md:space-y-0 md:flex-row"
+    class="flex flex-col items-center justify-center mt-16 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
   >
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
         <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">1x R$300,00</h4>
+        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">1x R$500,00</h4>
         <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">1x R$300,00</h4>
         <p class="mt-4 text-gray-500 dark:text-gray-300">6 semanas de treino</p>
       </div>
@@ -412,12 +412,12 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
         <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">3x R$237,00</h4>
+        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">3x R$350,00</h4>
         <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">3x R$237,00</h4>
         <p class="mt-4 text-gray-500 dark:text-gray-300">12 semanas de treino</p>
       </div>
@@ -538,14 +538,14 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <p class="py-2 text-sm text-center text-white bg-blue-500">BÔNUS: Receba um Ebook.</p>
       <div class="px-6 py-4">
         <div class="text-center">
           <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Semestral</p>
           <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-          <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$197,00</h4>
+          <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$250,00</h4>
           <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">6x R$197,00</h4>
           <p class="mt-4 text-gray-500 dark:text-gray-300">24 semanas de treino</p>
         </div>
@@ -688,16 +688,16 @@ const props = defineProps(['activeTab'])
 
   <div
     v-if="props.activeTab === 'Diamante'"
-    class="flex flex-col items-center justify-center mt-16 space-y-6 md:items-start md:-mx-5 md:space-y-0 md:flex-row"
+    class="flex flex-col items-center justify-center mt-16 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
   >
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
         <p class="mt-4 text-gray-500 dark:text-gray-300">Acompanhamento Presencial</p>
         <p class="text-gray-500 dark:text-gray-300">3x na semana</p>
-        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">1x R$400,00</h4>
+        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">1x R$600,00</h4>
         <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">1x R$400,00</h4>
         <p class="mt-4 text-gray-500 dark:text-gray-300">6 semanas de treino</p>
       </div>
@@ -816,13 +816,13 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
         <p class="mt-4 text-gray-500 dark:text-gray-300">Acompanhamento Presencial</p>
         <p class="text-gray-500 dark:text-gray-300">3x na semana</p>
-        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">3x R$337,00</h4>
+        <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">3x R$450,00</h4>
         <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">3x R$337,00</h4>
         <p class="mt-4 text-gray-500 dark:text-gray-300">18 semanas de treino</p>
       </div>
@@ -941,14 +941,14 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg md:mx-5 md:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
     >
       <div class="px-6 py-4">
         <div class="text-center">
           <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Semestral</p>
           <p class="mt-4 text-gray-500 dark:text-gray-300">Acompanhamento Presencial</p>
           <p class="text-gray-500 dark:text-gray-300">3x na semana</p>
-          <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$300,00</h4>
+          <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$400,00</h4>
           <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">6x R$300,00</h4>
           <p class="mt-4 text-gray-500 dark:text-gray-300">24 semanas de treino</p>
         </div>
