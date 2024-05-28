@@ -30,11 +30,24 @@ const closeZoom = () => {
 </script>
 
 <template>
-  <section id="antes-depois" class="bg-white">
+  <section
+    id="antes-depois"
+    class="bg-cover"
+    style="
+      background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url(/beforeafter/background.jpg);
+    "
+  >
     <div class="container px-6 py-10 mx-auto">
-      <h1 class="text-3xl lg:text-4xl font-semibold text-blue-500 uppercase text-center">
+      <h1 class="text-3xl lg:text-4xl font-semibold text-white uppercase text-center text-shadow">
         Antes e Depois
       </h1>
+      <p class="max-w-2xl mx-auto my-6 text-center text-gray-500 dark:text-gray-300">
+        Confira algumas transformações alcançadas pelos alunos que embarcaram na jornada de fitness
+        com a minha consultoria. Minha missão é impulsionar cada indivíduo rumo aos seus objetivos
+        de saúde e condicionamento físico, e estou orgulhoso de compartilhar alguns dos incríveis
+        resultados obtidos
+      </p>
 
       <div class="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-4">
         <div v-for="(image, index) in images" :key="index" class="lg:flex">
@@ -57,6 +70,18 @@ const closeZoom = () => {
 </template>
 
 <style scoped>
+.text-shadow {
+  text-shadow:
+    0 0 10px #000,
+    0 0 20px #000,
+    0 0 30px #00aaff,
+    0 0 40px #00aaff,
+    0 0 70px #00aaff,
+    0 0 80px #000,
+    0 0 100px #000,
+    0 0 150px #fff;
+}
+
 .zoom-overlay {
   position: fixed;
   top: 0;

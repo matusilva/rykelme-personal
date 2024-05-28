@@ -6,6 +6,9 @@
       <p class="text-3xl lg:text-4xl font-medium text-blue-500 uppercase">Sobre Mim</p>
 
       <h1 class="mt-2 text-2xl font-semibold text-gray-800 lg:text-3xl uppercase">Rykelme Lucas</h1>
+      <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
+      <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
+      <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
 
       <main class="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
         <div class="absolute w-full bg-blue-600 -z-10 md:h-96 rounded-2xl"></div>
