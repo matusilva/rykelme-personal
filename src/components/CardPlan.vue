@@ -90,11 +90,16 @@ const props = defineProps(['activeTab'])
         </div>
       </div>
 
-      <button
-        class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+      <a
+        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        target="_blank"
       >
-        Escolher Plano Mensal
-      </button>
+        <button
+          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Escolher Plano Mensal
+        </button>
+      </a>
     </div>
 
     <div
@@ -180,11 +185,16 @@ const props = defineProps(['activeTab'])
         </div>
       </div>
 
-      <button
-        class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+      <a
+        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        target="_blank"
       >
-        Escolher Plano Trimestral
-      </button>
+        <button
+          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Escolher Plano Trimestral
+        </button>
+      </a>
     </div>
 
     <div
@@ -272,11 +282,16 @@ const props = defineProps(['activeTab'])
           </div>
         </div>
 
-        <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        <a
+          href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+          target="_blank"
         >
-          Escolher Plano Semestral
-        </button>
+          <button
+            class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          >
+            Escolher Plano Semestral
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -404,11 +419,16 @@ const props = defineProps(['activeTab'])
         </div>
       </div>
 
-      <button
-        class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+      <a
+        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        target="_blank"
       >
-        Escolher Plano Mensal
-      </button>
+        <button
+          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Escolher Plano Mensal
+        </button>
+      </a>
     </div>
 
     <div
@@ -530,11 +550,16 @@ const props = defineProps(['activeTab'])
         </div>
       </div>
 
-      <button
-        class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+      <a
+        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        target="_blank"
       >
-        Escolher Plano Trimestral
-      </button>
+        <button
+          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Escolher Plano Trimestral
+        </button>
+      </a>
     </div>
 
     <div
@@ -677,11 +702,16 @@ const props = defineProps(['activeTab'])
           </div>
         </div>
 
-        <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        <a
+          href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+          target="_blank"
         >
-          Escolher Plano Semestral
-        </button>
+          <button
+            class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          >
+            Escolher Plano Semestral
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -808,11 +838,16 @@ const props = defineProps(['activeTab'])
         </div>
       </div>
 
-      <button
-        class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+      <a
+        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        target="_blank"
       >
-        Escolher Plano Mensal
-      </button>
+        <button
+          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Escolher Plano Mensal
+        </button>
+      </a>
     </div>
 
     <div
@@ -933,11 +968,16 @@ const props = defineProps(['activeTab'])
         </div>
       </div>
 
-      <button
-        class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+      <a
+        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        target="_blank"
       >
-        Escolher Plano Trimestral
-      </button>
+        <button
+          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        >
+          Escolher Plano Trimestral
+        </button>
+      </a>
     </div>
 
     <div
@@ -1059,11 +1099,16 @@ const props = defineProps(['activeTab'])
           </div>
         </div>
 
-        <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+        <a
+          href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+          target="_blank"
         >
-          Escolher Plano Semestral
-        </button>
+          <button
+            class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          >
+            Escolher Plano Semestral
+          </button>
+        </a>
       </div>
     </div>
   </div>

@@ -10,14 +10,16 @@ import { RiInstagramLine, RiGithubFill, RiWhatsappLine } from '@remixicon/vue'
 
       <div class="flex -mx-2">
         <a
-          href="#"
+          href="https://www.instagram.com/rykelmelucas_/"
+          target="_blank"
           class="mx-2 transition-colors duration-300 text-gray-300 hover:text-blue-400"
           aria-label="Instagram"
         >
           <RiInstagramLine />
         </a>
         <a
-          href="#"
+          href="https://wa.me/558499149515"
+          target="_blank"
           class="mx-2 transition-colors duration-300 text-gray-300 hover:text-blue-400"
           aria-label="WhatsApp"
         >
@@ -28,7 +30,8 @@ import { RiInstagramLine, RiGithubFill, RiWhatsappLine } from '@remixicon/vue'
       <p class="text-xs text-gray-300 flex items-center">
         Desenvolvido:
         <a
-          href="#"
+          href="https://github.com/matusilva"
+          target="_blank"
           class="mx-2 transition-colors duration-300 text-gray-300 hover:text-blue-400 flex"
           aria-label="Github"
         >

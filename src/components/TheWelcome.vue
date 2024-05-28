@@ -50,12 +50,17 @@ const especialidades = ref([
             </p>
           </div>
 
-          <button
-            class="flex items-center mt-4 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+          <a
+            href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+            target="_blank"
           >
-            <RiWhatsappLine class="w-5 h-5 mx-1" />
-            <span class="mx-1">Entrar em contato</span>
-          </button>
+            <button
+              class="flex items-center mt-4 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+            >
+              <RiWhatsappLine class="w-5 h-5 mx-1" />
+              <span class="mx-1">Entrar em contato</span>
+            </button>
+          </a>
         </div>
         <div class="flex items-center justify-end w-full lg:mt-0 lg:w-1/2">
           <img class="lg:max-w-md" src="/profile/profile.png" alt="profile" />
