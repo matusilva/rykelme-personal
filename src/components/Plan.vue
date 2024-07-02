@@ -1,10 +1,6 @@
 <script setup>
-import { ref } from 'vue'
 import CardPlan from '@/components/CardPlan.vue'
 import { RiAwardFill, RiMedalLine, RiVipDiamondLine } from '@remixicon/vue'
-
-const tabs = ['Prata', 'Ouro', 'Diamante']
-const activeTab = ref(tabs[1])
 </script>
 
 <template>
@@ -20,27 +16,47 @@ const activeTab = ref(tabs[1])
         <span class="inline-block w-1 h-1 ml-1 bg-blue-500 rounded-full"></span>
       </div>
     </div>
+
     <div class="container px-6 pb-8 mx-auto">
       <div class="max-w-2xl p-1.5 mx-auto overflow-hidden rounded-lg bg-gray-800">
-        <div class="grid gap-3 sm:grid-cols-3">
-          <button
-            v-for="(tab, key) in tabs"
-            :key="key"
-            class="flex items-center justify-center px-3 py-2 font-medium uppercase transition-colors duration-300 transform bg-transparent rounded-lg focus:outline-none text-gray-200 hover:bg-gray-600"
-            @click="activeTab = tab"
-            :class="{
-              'shadow-md shadow-white-500/20 text-white hover:shadow-lg hover:shadow-white-500/40 active:opacity-[0.85] bg-gradient-to-tr from-white/20 to-white/30':
-                activeTab === tab
-            }"
+        <div class="grid gap-3 sm:grid-cols-1">
+          <div
+            class="flex items-center justify-center px-3 py-2 font-medium uppercase transition-colors duration-300 transform bg-transparent rounded-lg focus:outline-none text-gray-200 bg-gray-600"
           >
-            {{ tab }}
-            <RiAwardFill v-if="tab === 'Prata'" class="ml-1" />
-            <RiMedalLine v-if="tab === 'Ouro'" class="ml-1" />
-            <RiVipDiamondLine v-if="tab === 'Diamante'" class="ml-1" />
-          </button>
+            Consultoria Prata
+            <RiAwardFill class="ml-1" />
+          </div>
         </div>
       </div>
-      <CardPlan :active-tab="activeTab" />
+      <CardPlan activeTab="Prata" />
+    </div>
+
+    <div class="container px-6 pb-8 mx-auto">
+      <div class="max-w-2xl p-1.5 mx-auto overflow-hidden rounded-lg bg-gray-800">
+        <div class="grid gap-3 sm:grid-cols-1">
+          <div
+            class="text-yellow-400 bg-gray-700 flex items-center justify-center px-3 py-2 font-medium uppercase transition-colors duration-300 transform bg-transparent rounded-lg focus:outline-none"
+          >
+            Consultoria Ouro
+            <RiMedalLine class="ml-1" />
+          </div>
+        </div>
+      </div>
+      <CardPlan activeTab="Ouro" />
+    </div>
+
+    <div class="container px-6 pb-8 mx-auto">
+      <div class="max-w-2xl p-1.5 mx-auto overflow-hidden rounded-lg bg-gray-800">
+        <div class="grid gap-3 sm:grid-cols-1">
+          <div
+            class="text-cyan-300 flex items-center justify-center px-3 py-2 font-medium uppercase transition-colors duration-300 transform bg-transparent rounded-lg focus:outline-none bg-gray-700"
+          >
+            Consultoria Diamante
+            <RiVipDiamondLine class="ml-1" />
+          </div>
+        </div>
+      </div>
+      <CardPlan activeTab="Diamante" />
     </div>
   </section>
 </template>

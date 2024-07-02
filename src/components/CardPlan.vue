@@ -5,7 +5,7 @@ const props = defineProps(['activeTab'])
 <template>
   <div
     v-if="props.activeTab === 'Prata'"
-    class="flex flex-col items-center justify-center mt-16 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
+    class="flex flex-col items-center justify-center mt-4 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
   >
     <div
       class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
@@ -91,7 +91,7 @@ const props = defineProps(['activeTab'])
       </div>
 
       <a
-        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Mensal da Consultoria Prata"
         target="_blank"
       >
         <button
@@ -186,7 +186,7 @@ const props = defineProps(['activeTab'])
       </div>
 
       <a
-        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Trimestral da Consultoria Prata"
         target="_blank"
       >
         <button
@@ -283,7 +283,7 @@ const props = defineProps(['activeTab'])
         </div>
 
         <a
-          href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+          href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Semestral da Consultoria Prata"
           target="_blank"
         >
           <button
@@ -298,7 +298,7 @@ const props = defineProps(['activeTab'])
 
   <div
     v-if="props.activeTab === 'Ouro'"
-    class="flex flex-col items-center justify-center mt-16 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
+    class="flex flex-col items-center justify-center mt-4 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
   >
     <div
       class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
@@ -420,7 +420,7 @@ const props = defineProps(['activeTab'])
       </div>
 
       <a
-        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Mensal da Consultoria Ouro"
         target="_blank"
       >
         <button
@@ -551,7 +551,7 @@ const props = defineProps(['activeTab'])
       </div>
 
       <a
-        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Trimestral da Consultoria Ouro"
         target="_blank"
       >
         <button
@@ -703,7 +703,7 @@ const props = defineProps(['activeTab'])
         </div>
 
         <a
-          href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+          href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Semestral da Consultoria Ouro"
           target="_blank"
         >
           <button
@@ -718,7 +718,7 @@ const props = defineProps(['activeTab'])
 
   <div
     v-if="props.activeTab === 'Diamante'"
-    class="flex flex-col items-center justify-center mt-16 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
+    class="flex flex-col items-center justify-center mt-4 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
   >
     <div
       class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
@@ -839,7 +839,7 @@ const props = defineProps(['activeTab'])
       </div>
 
       <a
-        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Mensal da Consultoria Diamante"
         target="_blank"
       >
         <button
@@ -969,7 +969,7 @@ const props = defineProps(['activeTab'])
       </div>
 
       <a
-        href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+        href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Trimestral da Consultoria Diamante"
         target="_blank"
       >
         <button
@@ -1100,7 +1100,7 @@ const props = defineProps(['activeTab'])
         </div>
 
         <a
-          href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
+          href="https://wa.me/558499149515?text=Olá, eu gostaria de saber mais sobre o Plano Semestral da Consultoria Diamante"
           target="_blank"
         >
           <button
