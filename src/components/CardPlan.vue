@@ -1,11 +1,39 @@
 <script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
 const props = defineProps(['activeTab'])
+
+const isVisible = ref(false)
+const containerRef = ref(null)
+
+const handleScroll = () => {
+  if (!containerRef.value) return
+
+  const sectionTop = containerRef.value.getBoundingClientRect().top
+  const screenHeight = window.innerHeight
+
+  // Quando o topo da seção estiver visível na tela
+  if (sectionTop < screenHeight) {
+    isVisible.value = true
+    window.removeEventListener('scroll', handleScroll) // Remove o listener após a animação aparecer
+  }
+}
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
 </script>
 
 <template>
   <div
+    ref="containerRef"
     v-if="props.activeTab === 'Prata'"
     class="mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
+    :class="{ 'animate__animated animate__fadeInRightBig animate__slow': isVisible }"
   >
     <div
       class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
@@ -297,8 +325,10 @@ const props = defineProps(['activeTab'])
   </div>
 
   <div
+    ref="containerRef"
     v-if="props.activeTab === 'Ouro'"
     class="mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
+    :class="{ 'animate__animated animate__fadeInLeftBig animate__slow': isVisible }"
   >
     <div
       class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
@@ -717,8 +747,10 @@ const props = defineProps(['activeTab'])
   </div>
 
   <div
+    ref="containerRef"
     v-if="props.activeTab === 'Diamante'"
     class="mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
+    :class="{ 'animate__animated animate__fadeInRightBig animate__slow': isVisible }"
   >
     <div
       class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"

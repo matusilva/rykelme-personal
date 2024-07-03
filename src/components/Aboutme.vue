@@ -1,4 +1,30 @@
-<script setup></script>
+<script setup>
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+const isVisible = ref(false)
+const containerRef = ref(null)
+
+const handleScroll = () => {
+  if (!containerRef.value) return
+
+  const sectionTop = containerRef.value.getBoundingClientRect().top
+  const screenHeight = window.innerHeight
+
+  // Quando o topo da seção estiver visível na tela
+  if (sectionTop < screenHeight) {
+    isVisible.value = true
+    window.removeEventListener('scroll', handleScroll) // Remove o listener após a animação aparecer
+  }
+}
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+</script>
 
 <template>
   <section id="sobre" class="bg-white">
@@ -14,7 +40,9 @@
         <div class="absolute -z-10 w-full rounded-2xl bg-blue-600 md:h-96"></div>
 
         <div
+          ref="containerRef"
           class="w-full rounded-2xl bg-blue-600 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
+          :class="{ 'animate__animated animate__zoomIn animate__slow': isVisible }"
         >
           <img
             class="rounded-full object-cover shadow-md md:mx-6 md:h-[32rem] md:w-80 md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"

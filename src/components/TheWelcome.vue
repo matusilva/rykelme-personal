@@ -30,7 +30,7 @@ const especialidades = ref([
             Especialista em
           </p>
 
-          <div class="animate__animated animate__fadeInRight animate__slower mt-4 space-y-5">
+          <div class="animate__animated animate__fadeInRight animate__slow mt-4 space-y-5">
             <p
               v-for="especialidade in especialidades"
               :key="especialidade"
