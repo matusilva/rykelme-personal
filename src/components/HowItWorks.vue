@@ -27,7 +27,7 @@ const checkIntersect = (entries, observer) => {
 onMounted(() => {
   const options = {
     root: null,
-    rootMargin: '-200px 0px',
+    rootMargin: '-300px 0px',
     threshold: 0.5
   }
 
