@@ -16,21 +16,21 @@ const toggleMenu = () => {
         url(/background.jpeg);
     "
   >
-    <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+    <div class="container mx-auto px-6 py-4 md:flex md:items-center md:justify-between">
       <div class="flex items-center justify-between">
         <a href="#">
-          <img class="w-auto h-14" src="/logo/logo.png" alt="" />
+          <img class="h-14 w-auto" src="/logo/logo.png" alt="" />
         </a>
         <div class="flex md:hidden">
           <button
             @click="toggleMenu"
             type="button"
-            class="text-gray-200 hover:text-gray-400 focus:outline-none focus:text-gray-400"
+            class="text-gray-200 hover:text-gray-400 focus:text-gray-400 focus:outline-none"
             aria-label="toggle menu"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
+              class="h-6 w-6"
               :class="{ hidden: isOpen, block: !isOpen }"
               fill="none"
               viewBox="0 0 24 24"
@@ -41,7 +41,7 @@ const toggleMenu = () => {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-6 h-6"
+              class="h-6 w-6"
               :class="{ hidden: !isOpen, block: isOpen }"
               fill="none"
               viewBox="0 0 24 24"
@@ -55,9 +55,9 @@ const toggleMenu = () => {
       </div>
       <div
         :class="{ block: isOpen, hidden: !isOpen }"
-        class="absolute inset-x-0 z-20 w-full bg-black opacity-95 px-6 py-4 transition-all duration-300 ease-in-out md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center"
+        class="absolute inset-x-0 z-20 w-full bg-black px-6 py-4 opacity-95 transition-all duration-300 ease-in-out md:relative md:top-0 md:mt-0 md:flex md:w-auto md:translate-x-0 md:items-center md:bg-transparent md:p-0 md:opacity-100"
       >
-        <div class="flex flex-col md:flex-row md:mx-6">
+        <div class="flex flex-col md:mx-6 md:flex-row">
           <a class="nav-link" href="#">Home</a>
           <a class="nav-link" href="#planos">Planos</a>
           <a class="nav-link" href="#como-funciona">Como funciona</a>
@@ -81,6 +81,6 @@ const toggleMenu = () => {
 }
 
 .nav-link {
-  @apply text-shadow my-2 transition-colors duration-300 transform text-gray-200 hover:text-blue-400 md:mx-4 md:my-0 font-semibold;
+  @apply text-shadow my-2 transform font-semibold text-gray-200 transition-colors duration-300 hover:text-blue-400 md:mx-4 md:my-0;
 }
 </style>

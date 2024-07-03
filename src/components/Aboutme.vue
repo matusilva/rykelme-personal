@@ -2,22 +2,22 @@
 
 <template>
   <section id="sobre" class="bg-white">
-    <div class="max-w-6xl px-6 py-10 mx-auto">
-      <p class="text-3xl lg:text-4xl font-medium text-blue-500 uppercase">Sobre Mim</p>
+    <div class="mx-auto max-w-6xl px-6 py-10">
+      <p class="text-3xl font-medium uppercase text-blue-500 lg:text-4xl">Sobre Mim</p>
 
-      <h1 class="mt-2 text-2xl font-semibold text-gray-800 lg:text-3xl uppercase">Rykelme Lucas</h1>
-      <span class="inline-block w-40 h-1 bg-blue-500 rounded-full"></span>
-      <span class="inline-block w-3 h-1 mx-1 bg-blue-500 rounded-full"></span>
-      <span class="inline-block w-1 h-1 bg-blue-500 rounded-full"></span>
+      <h1 class="mt-2 text-2xl font-semibold uppercase text-gray-800 lg:text-3xl">Rykelme Lucas</h1>
+      <span class="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
+      <span class="mx-1 inline-block h-1 w-3 rounded-full bg-blue-500"></span>
+      <span class="inline-block h-1 w-1 rounded-full bg-blue-500"></span>
 
-      <main class="relative z-20 w-full mt-8 md:flex md:items-center xl:mt-12">
-        <div class="absolute w-full bg-blue-600 -z-10 md:h-96 rounded-2xl"></div>
+      <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
+        <div class="absolute -z-10 w-full rounded-2xl bg-blue-600 md:h-96"></div>
 
         <div
-          class="w-full p-6 bg-blue-600 md:flex md:items-center rounded-2xl md:bg-transparent md:p-0 lg:px-12 md:justify-evenly"
+          class="w-full rounded-2xl bg-blue-600 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
         >
           <img
-            class="md:mx-6 rounded-full object-cover shadow-md md:h-[32rem] md:w-80 lg:h-[36rem] lg:w-[26rem] md:rounded-2xl"
+            class="rounded-full object-cover shadow-md md:mx-6 md:h-[32rem] md:w-80 md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"
             src="/profile/profile5.png"
             alt="client photo"
           />
@@ -28,7 +28,7 @@
               <p class="text-blue-200">Personal Trainer</p>
             </div>
 
-            <p class="mt-4 leading-relaxed text-white font-light">
+            <p class="mt-4 font-light leading-relaxed text-white">
               Olá, sou Rykelme Lucas, Personal Trainer e Profissional de Educação Física. Com vasta
               experiência em diversas áreas, incluindo musculação, reabilitação de lesões na lombar,
               no joelho e na coluna, além de emagrecimento, estou aqui para ajudar você a atingir

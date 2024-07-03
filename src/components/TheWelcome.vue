@@ -11,30 +11,34 @@ const especialidades = ref([
 
 <template>
   <header
-    class="bg-no-repeat bg-center bg-cover"
+    class="bg-cover bg-center bg-no-repeat"
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
         url(/backgrounds/background.jpeg);
     "
   >
-    <div class="container px-6 mx-auto">
+    <div class="container mx-auto px-6">
       <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
-          <h1 class="text-3xl font-semibold text-white pt-4 sm:pt-0 lg:text-5xl text-shadow">
+          <h1
+            class="text-shadow animate__animated animate__fadeInRight pt-4 text-3xl font-semibold text-white sm:pt-0 lg:text-5xl"
+          >
             CONSULTORIA COMPLETA TREINAMENTO PERSONALIZADO E ACOMPANHAMENTO <br />
-            <span class="text-blue-500">ESPECIALIZADO</span>
+            <p class="text-blue-500">ESPECIALIZADO</p>
           </h1>
-          <p class="mt-3 text-gray-400">Especialista em</p>
+          <p class="animate__animated animate__fadeInRight animate__slow mt-3 text-gray-400">
+            Especialista em
+          </p>
 
-          <div class="mt-4 space-y-5">
+          <div class="animate__animated animate__fadeInRight animate__slower mt-4 space-y-5">
             <p
               v-for="especialidade in especialidades"
               :key="especialidade"
-              class="flex items-center -mx-2 text-gray-200"
+              class="-mx-2 flex items-center text-gray-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="w-6 h-6 mx-2 text-blue-500"
+                class="mx-2 h-6 w-6 text-blue-500"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -55,14 +59,16 @@ const especialidades = ref([
             target="_blank"
           >
             <button
-              class="flex items-center mt-4 px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
+              class="animate__animated animate__fadeIn animate__slower mt-4 flex transform items-center rounded-lg bg-blue-600 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
             >
-              <RiWhatsappLine class="w-5 h-5 mx-1" />
+              <RiWhatsappLine class="mx-1 h-5 w-5" />
               <span class="mx-1">Entrar em contato</span>
             </button>
           </a>
         </div>
-        <div class="flex items-center justify-end w-full lg:mt-0 lg:w-1/2">
+        <div
+          class="animate__animated animate__fadeInRightBig flex w-full items-center justify-end lg:mt-0 lg:w-1/2"
+        >
           <img class="lg:max-w-md" src="/profile/profile.png" alt="profile" />
         </div>
       </div>

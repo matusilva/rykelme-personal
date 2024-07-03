@@ -5,10 +5,10 @@ const props = defineProps(['activeTab'])
 <template>
   <div
     v-if="props.activeTab === 'Prata'"
-    class="flex flex-col items-center justify-center mt-4 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
+    class="mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
   >
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
@@ -22,7 +22,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -39,7 +39,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -56,7 +56,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -73,7 +73,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -95,7 +95,7 @@ const props = defineProps(['activeTab'])
         target="_blank"
       >
         <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
         >
           Escolher Plano Mensal
         </button>
@@ -103,7 +103,7 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
@@ -117,7 +117,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -134,7 +134,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -151,7 +151,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -168,7 +168,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -190,7 +190,7 @@ const props = defineProps(['activeTab'])
         target="_blank"
       >
         <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
         >
           Escolher Plano Trimestral
         </button>
@@ -198,9 +198,9 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform overflow-hidden rounded-lg bg-gray-50 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
-      <p class="py-2 text-sm text-center text-white uppercase bg-blue-500">Mais Recomendado</p>
+      <p class="bg-blue-500 py-2 text-center text-sm uppercase text-white">Mais Recomendado</p>
       <div class="px-6 py-4">
         <div class="text-center">
           <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Semestral</p>
@@ -214,7 +214,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -231,7 +231,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -248,7 +248,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -265,7 +265,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -287,7 +287,7 @@ const props = defineProps(['activeTab'])
           target="_blank"
         >
           <button
-            class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
           >
             Escolher Plano Semestral
           </button>
@@ -298,10 +298,10 @@ const props = defineProps(['activeTab'])
 
   <div
     v-if="props.activeTab === 'Ouro'"
-    class="flex flex-col items-center justify-center mt-4 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
+    class="mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
   >
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
@@ -315,7 +315,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -332,7 +332,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -349,7 +349,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -366,7 +366,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -383,7 +383,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -402,7 +402,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -424,7 +424,7 @@ const props = defineProps(['activeTab'])
         target="_blank"
       >
         <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
         >
           Escolher Plano Mensal
         </button>
@@ -432,7 +432,7 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
@@ -446,7 +446,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -463,7 +463,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -480,7 +480,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -497,7 +497,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -514,7 +514,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -533,7 +533,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -555,7 +555,7 @@ const props = defineProps(['activeTab'])
         target="_blank"
       >
         <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
         >
           Escolher Plano Trimestral
         </button>
@@ -563,9 +563,9 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform overflow-hidden rounded-lg bg-gray-50 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
-      <p class="py-2 text-sm text-center text-white bg-blue-500">BÔNUS: Receba um Ebook.</p>
+      <p class="bg-blue-500 py-2 text-center text-sm text-white">BÔNUS: Receba um Ebook.</p>
       <div class="px-6 py-4">
         <div class="text-center">
           <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Semestral</p>
@@ -579,7 +579,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -596,7 +596,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -613,7 +613,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -630,7 +630,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -647,7 +647,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -666,7 +666,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -685,7 +685,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -707,7 +707,7 @@ const props = defineProps(['activeTab'])
           target="_blank"
         >
           <button
-            class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
           >
             Escolher Plano Semestral
           </button>
@@ -718,10 +718,10 @@ const props = defineProps(['activeTab'])
 
   <div
     v-if="props.activeTab === 'Diamante'"
-    class="flex flex-col items-center justify-center mt-4 space-y-6 lg:items-start lg:-mx-5 lg:space-y-0 lg:flex-row"
+    class="mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
   >
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
@@ -736,7 +736,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -753,7 +753,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -770,7 +770,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -787,7 +787,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -804,7 +804,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -821,7 +821,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -843,7 +843,7 @@ const props = defineProps(['activeTab'])
         target="_blank"
       >
         <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
         >
           Escolher Plano Mensal
         </button>
@@ -851,7 +851,7 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full px-6 py-4 transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="text-center">
         <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
@@ -866,7 +866,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -883,7 +883,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -900,7 +900,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -917,7 +917,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -934,7 +934,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -951,7 +951,7 @@ const props = defineProps(['activeTab'])
         <div class="flex items-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="w-5 h-5 text-blue-500"
+            class="h-5 w-5 text-blue-500"
             viewBox="0 0 20 20"
             fill="currentColor"
           >
@@ -973,7 +973,7 @@ const props = defineProps(['activeTab'])
         target="_blank"
       >
         <button
-          class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+          class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
         >
           Escolher Plano Trimestral
         </button>
@@ -981,7 +981,7 @@ const props = defineProps(['activeTab'])
     </div>
 
     <div
-      class="w-full overflow-hidden transition-colors duration-300 transform rounded-lg lg:mx-5 lg:w-96 bg-gray-50 dark:bg-gray-800"
+      class="w-full transform overflow-hidden rounded-lg bg-gray-50 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
     >
       <div class="px-6 py-4">
         <div class="text-center">
@@ -997,7 +997,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1014,7 +1014,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1031,7 +1031,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1048,7 +1048,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1065,7 +1065,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1082,7 +1082,7 @@ const props = defineProps(['activeTab'])
           <div class="flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="w-5 h-5 text-blue-500"
+              class="h-5 w-5 text-blue-500"
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -1104,7 +1104,7 @@ const props = defineProps(['activeTab'])
           target="_blank"
         >
           <button
-            class="w-full px-4 py-2 mt-10 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            class="mt-10 w-full transform rounded-md bg-blue-500 px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-blue-600 focus:bg-blue-600 focus:outline-none"
           >
             Escolher Plano Semestral
           </button>
