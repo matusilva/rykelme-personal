@@ -59,11 +59,10 @@ const toggleMenu = () => {
       >
         <div class="flex flex-col md:mx-6 md:flex-row">
           <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#planos">Planos</a>
           <a class="nav-link" href="#como-funciona">Como funciona</a>
           <a class="nav-link" href="#antes-depois">Resultados</a>
+          <a class="nav-link" href="#planos">Planos</a>
           <a class="nav-link" href="#sobre">Sobre mim</a>
-          <a class="nav-link" href="#">Contato</a>
         </div>
       </div>
     </div>

@@ -46,7 +46,7 @@ onMounted(() => {
             <p
               v-for="especialidade in especialidades"
               :key="especialidade"
-              class="-mx-2 flex items-center text-gray-200 animate"
+              class="animate -mx-2 flex items-center text-gray-200"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
