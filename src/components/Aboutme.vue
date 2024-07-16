@@ -1,48 +1,20 @@
-<script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-const isVisible = ref(false)
-const containerRef = ref(null)
-
-const handleScroll = () => {
-  if (!containerRef.value) return
-
-  const sectionTop = containerRef.value.getBoundingClientRect().top
-  const screenHeight = window.innerHeight
-
-  // Quando o topo da seção estiver visível na tela
-  if (sectionTop < screenHeight) {
-    isVisible.value = true
-    window.removeEventListener('scroll', handleScroll) // Remove o listener após a animação aparecer
-  }
-}
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
-</script>
+<script setup></script>
 
 <template>
   <section id="sobre" class="bg-white">
     <div class="mx-auto max-w-6xl px-6 py-10">
-      <p class="text-3xl font-medium uppercase text-blue-500 lg:text-4xl">Sobre Mim</p>
+      <p class="text-3xl font-medium uppercase text-[#0099FF] lg:text-4xl">Sobre Mim</p>
 
       <h1 class="mt-2 text-2xl font-semibold uppercase text-gray-800 lg:text-3xl">Rykelme Lucas</h1>
-      <span class="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
-      <span class="mx-1 inline-block h-1 w-3 rounded-full bg-blue-500"></span>
-      <span class="inline-block h-1 w-1 rounded-full bg-blue-500"></span>
+      <span class="inline-block h-1 w-40 rounded-full bg-[#0099FF]"></span>
+      <span class="mx-1 inline-block h-1 w-3 rounded-full bg-[#0099FF]"></span>
+      <span class="inline-block h-1 w-1 rounded-full bg-[#0099FF]"></span>
 
       <main class="relative z-20 mt-8 w-full md:flex md:items-center xl:mt-12">
         <div class="absolute -z-10 w-full rounded-2xl bg-blue-600 md:h-96"></div>
 
         <div
-          ref="containerRef"
           class="w-full rounded-2xl bg-blue-600 p-6 md:flex md:items-center md:justify-evenly md:bg-transparent md:p-0 lg:px-12"
-          :class="{ 'animate__animated animate__zoomIn animate__slow': isVisible }"
         >
           <img
             class="rounded-full object-cover shadow-md md:mx-6 md:h-[32rem] md:w-80 md:rounded-2xl lg:h-[36rem] lg:w-[26rem]"

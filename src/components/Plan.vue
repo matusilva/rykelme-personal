@@ -11,9 +11,9 @@ import { RiAwardFill, RiMedalLine, RiVipDiamondLine } from '@remixicon/vue'
       </h1>
 
       <div class="mt-2 text-center">
-        <span class="inline-block h-1 w-40 rounded-full bg-blue-500"></span>
-        <span class="ml-1 inline-block h-1 w-3 rounded-full bg-blue-500"></span>
-        <span class="ml-1 inline-block h-1 w-1 rounded-full bg-blue-500"></span>
+        <span class="inline-block h-1 w-40 rounded-full bg-[#0099FF]"></span>
+        <span class="ml-1 inline-block h-1 w-3 rounded-full bg-[#0099FF]"></span>
+        <span class="ml-1 inline-block h-1 w-1 rounded-full bg-[#0099FF]"></span>
       </div>
     </div>
 

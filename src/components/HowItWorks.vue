@@ -1,6 +1,7 @@
 <script setup>
+import { onMounted } from 'vue'
+import { gsap } from 'gsap'
 import { RiCheckLine } from '@remixicon/vue'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
 
 const items = [
   'Anamnese completa para entender suas necessidades e histórico de saúde.',
@@ -11,28 +12,21 @@ const items = [
   "Ebook 'Dominando a Técnica dos Exercícios de Musculação', com dicas para evitar lesões e manter uma boa postura durante os treinos."
 ]
 
-const isVisible = ref(false)
-const containerRef = ref(null)
-
-const handleScroll = () => {
-  if (!containerRef.value) return
-
-  const sectionTop = containerRef.value.getBoundingClientRect().top
-  const screenHeight = window.innerHeight
-
-  // Quando o topo da seção estiver visível na tela
-  if (sectionTop < screenHeight) {
-    isVisible.value = true
-    window.removeEventListener('scroll', handleScroll) // Remove o listener após a animação aparecer
-  }
-}
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
-
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  gsap.utils.toArray('.item').forEach((item) => {
+    gsap.from(item, {
+      scrollTrigger: {
+        trigger: item,
+        start: 'top 80%',
+        end: 'top 20%',
+        toggleActions: 'play none none reverse'
+      },
+      opacity: 0,
+      x: -200,
+      duration: 1,
+      stagger: 0.3
+    })
+  })
 })
 </script>
 
@@ -45,21 +39,15 @@ onMounted(() => {
         url(/backgrounds/background-woman.jpg);
     "
   >
-    <div
-      ref="containerRef"
-      class="container mx-auto flex h-full flex-col space-y-6 px-6 py-16 lg:h-[48rem]"
-      :class="{ 'animate__animated animate__fadeInRightBig animate__slow': isVisible }"
-    >
-      <div v-if="isVisible">
-        <h1
-          class="text-shadow py-4 text-center text-3xl font-semibold tracking-wide text-white lg:text-5xl"
-        >
+    <div class="container mx-auto flex h-full flex-col space-y-6 px-6 py-16 lg:h-[48rem]">
+      <div>
+        <h1 class="py-4 text-center text-3xl font-semibold tracking-wide text-white lg:text-5xl">
           COMO FUNCIONA A CONSULTORIA
         </h1>
         <div class="mt-8 grid gap-6 md:text-xl">
           <template v-for="(item, key) in items" :key="key">
-            <div class="flex items-center">
-              <RiCheckLine size="32" class="text-blue-500" />
+            <div class="item flex items-center">
+              <RiCheckLine size="32" class="text-[#0099FF]" />
               <span class="mx-3 text-gray-200">{{ item }}</span>
             </div>
           </template>
@@ -69,16 +57,4 @@ onMounted(() => {
   </section>
 </template>
 
-<style scoped>
-.text-shadow {
-  text-shadow:
-    0 0 10px #000,
-    0 0 20px #000,
-    0 0 30px #00aaff,
-    0 0 40px #00aaff,
-    0 0 70px #00aaff,
-    0 0 80px #000,
-    0 0 100px #000,
-    0 0 150px #fff;
-}
-</style>
+<style scoped></style>

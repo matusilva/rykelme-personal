@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from 'vue'
+import { ref } from 'vue'
 
 const images = ref([
   { src: '/beforeafter/beforeafter1.jpg', alt: '' },
@@ -15,30 +15,6 @@ const images = ref([
   { src: '/beforeafter/beforeafter11.jpg', alt: '' },
   { src: '/beforeafter/beforeafter12.jpg', alt: '' }
 ])
-
-const isVisible = ref(false)
-const containerRef = ref(null)
-
-const handleScroll = () => {
-  if (!containerRef.value) return
-
-  const sectionTop = containerRef.value.getBoundingClientRect().top
-  const screenHeight = window.innerHeight
-
-  // Quando o topo da seção estiver visível na tela
-  if (sectionTop < screenHeight) {
-    isVisible.value = true
-    window.removeEventListener('scroll', handleScroll) // Remove o listener após a animação aparecer
-  }
-}
-
-onBeforeUnmount(() => {
-  window.removeEventListener('scroll', handleScroll)
-})
-
-onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
-})
 </script>
 
 <template>
@@ -50,13 +26,9 @@ onMounted(() => {
         url(/beforeafter/background.jpg);
     "
   >
-    <div
-      ref="containerRef"
-      class="container mx-auto px-6 py-10"
-      :class="{ 'animate__animated animate__fadeInUp animate__slow': isVisible }"
-    >
-      <div v-if="isVisible">
-        <h1 class="text-shadow text-center text-3xl font-semibold uppercase text-white lg:text-4xl">
+    <div class="container mx-auto px-6 py-10">
+      <div>
+        <h1 class="text-center text-3xl font-semibold uppercase text-white lg:text-4xl">
           Antes e Depois
         </h1>
         <p class="mx-auto my-6 max-w-2xl text-center text-gray-500 dark:text-gray-300">
@@ -80,16 +52,4 @@ onMounted(() => {
   </section>
 </template>
 
-<style scoped>
-.text-shadow {
-  text-shadow:
-    0 0 10px #000,
-    0 0 20px #000,
-    0 0 30px #00aaff,
-    0 0 40px #00aaff,
-    0 0 70px #00aaff,
-    0 0 80px #000,
-    0 0 100px #000,
-    0 0 150px #fff;
-}
-</style>
+<style scoped></style>

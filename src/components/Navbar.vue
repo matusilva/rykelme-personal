@@ -71,16 +71,7 @@ const toggleMenu = () => {
 </template>
 
 <style scoped>
-.text-shadow {
-  text-shadow:
-    0 0 5px #000,
-    0 0 10px #000,
-    0 0 15px #153e9d,
-    0 0 15px #153e9d,
-    0 0 20px #153e9d;
-}
-
 .nav-link {
-  @apply text-shadow my-2 transform font-semibold text-gray-200 transition-colors duration-300 hover:text-blue-400 md:mx-4 md:my-0;
+  @apply my-2 transform font-semibold text-gray-200 transition-colors duration-300 hover:text-[#0099FF] md:mx-4 md:my-0;
 }
 </style>
