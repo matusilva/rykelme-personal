@@ -29,12 +29,13 @@
             </div>
 
             <p class="mt-4 font-light leading-relaxed text-white">
-              Olá, sou Rykelme Lucas, Personal Trainer e Profissional de Educação Física. Com vasta
-              experiência em diversas áreas, incluindo musculação, reabilitação de lesões na lombar,
-              no joelho e na coluna, além de emagrecimento, estou aqui para ajudar você a atingir
-              seus objetivos de forma segura e eficaz. Minha paixão pela saúde e pelo bem-estar me
-              motiva a oferecer um treinamento personalizado e especializado, adaptado às suas
-              necessidades individuais. Vamos juntos alcançar seus objetivos e transformar sua vida!
+              Meu nome é Rykelme Lucas, sou Personal Trainer formado e graduado em Educação Física.
+              Com um vasto currículo que inclui mais de 20 cursos profissionalizantes na área, me
+              especializei em emagrecimento e desenvolvi o método <strong>"Emagreça Já"</strong>.
+              Este método inovador já auxiliou mais de 50 pessoas a atingirem seus objetivos de
+              forma eficaz e saudável. Com uma abordagem baseada em ciência e experiência prática,
+              me dedico a transformar vidas através de treinamentos personalizados e orientações
+              nutricionais.
             </p>
           </div>
         </div>

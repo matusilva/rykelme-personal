@@ -1,12 +1,17 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import { gsap } from 'gsap'
+import { RiWhatsappLine } from '@remixicon/vue'
 
 const especialidades = ref([
-  'emagrecimento e definição muscular',
-  'hipertrofia muscular',
-  'posturologia e reabilitação de lesões'
+  'Emagrecimento',
+  'Perca de 5kg a 10kg em 45 dias com meu método "Emagreça Já"'
 ])
+
+const redirectWhattsap = () => {
+  const link = `https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria`
+  window.open(link, '_blank')
+}
 
 onMounted(() => {
   gsap.from('.animate', {
@@ -36,9 +41,9 @@ onMounted(() => {
       <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
           <h1 class="pt-4 text-3xl font-semibold text-white sm:pt-0 lg:text-4xl">
-            <span class="animate block">Consultoria completa,</span>
-            <span class="animate block">treinamento personalizado e</span>
-            <p class="animate block text-[#0099FF]">acompanhamento especializado</p>
+            <span class="animate block">Acelere seu progresso,</span>
+            <span class="animate block">transforme a sua vida</span>
+            <p class="animate block text-[#0099FF]">impressione-se com seu resultado</p>
           </h1>
           <p class="animate mt-3 text-gray-400">Especialista em</p>
 
@@ -66,18 +71,15 @@ onMounted(() => {
             </p>
           </div>
 
-          <a
-            class="animate"
-            href="https://wa.me/558499149515?text=Ol%C3%A1,+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+consultoria"
-            target="_blank"
-          >
+          <div class="animate">
             <button
+              @click="redirectWhattsap"
               class="mt-4 flex transform items-center rounded-lg bg-[#0099FF] px-4 py-2 font-medium capitalize tracking-wide text-white transition duration-500 ease-in-out hover:scale-110 hover:bg-[#0099FF] focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80"
             >
               <RiWhatsappLine class="mx-1 h-5 w-5" />
               <span class="mx-1">Entrar em contato</span>
             </button>
-          </a>
+          </div>
         </div>
         <div class="flex w-full items-center justify-end lg:mt-0 lg:w-1/2">
           <img class="lg:max-w-md" src="/profile/profile.png" alt="profile" />
