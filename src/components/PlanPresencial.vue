@@ -54,7 +54,7 @@ onMounted(() => {
       </div>
 
       <div
-        class="animatePlan mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:items-start lg:space-y-0"
+        class="animatePlan mt-4 flex flex-col items-center justify-center space-y-6 lg:-mx-5 lg:flex-row lg:space-y-0"
       >
         <div
           class="plan-item w-full transform rounded-lg bg-gray-50 px-6 py-4 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
@@ -145,7 +145,9 @@ onMounted(() => {
         <div
           class="plan-item w-full transform overflow-hidden rounded-lg bg-gray-50 transition-colors duration-500 lg:mx-5 lg:w-96 dark:bg-gray-800"
         >
-          <p class="bg-blue-500 py-2 text-center text-sm uppercase text-white">Maior Desconto</p>
+          <p class="bg-blue-800 py-1 text-center text-sm uppercase tracking-widest text-white">
+            Maior Desconto
+          </p>
           <div class="px-6 py-4">
             <div class="text-center">
               <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Anual</p>
