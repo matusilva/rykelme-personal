@@ -13,19 +13,17 @@ const items = [
 ]
 
 onMounted(() => {
-  gsap.utils.toArray('.item').forEach((item) => {
-    gsap.from(item, {
-      scrollTrigger: {
-        trigger: item,
-        start: 'top 80%',
-        end: 'top 20%',
-        toggleActions: 'play none none reverse'
-      },
-      opacity: 0,
-      x: -200,
-      duration: 1,
-      stagger: 0.3
-    })
+  gsap.from('.itemList', {
+    scrollTrigger: {
+      trigger: '.animateHowItWorks',
+      start: 'top 80%',
+      end: 'bottom 20%',
+      toggleActions: 'play none none reverse'
+    },
+    opacity: 0,
+    x: -300,
+    duration: 1,
+    stagger: 0.5
   })
 })
 </script>
@@ -33,7 +31,7 @@ onMounted(() => {
 <template>
   <section
     id="como-funciona"
-    class="relative bg-cover bg-right-top bg-no-repeat"
+    class="animateHowItWorks relative bg-cover bg-right-top bg-no-repeat"
     style="
       background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
         url(/backgrounds/background-woman.jpg);
@@ -46,7 +44,7 @@ onMounted(() => {
         </h1>
         <div class="mt-8 grid gap-6 md:text-xl">
           <template v-for="(item, key) in items" :key="key">
-            <div class="item flex items-center">
+            <div class="itemList flex items-center">
               <RiCheckLine size="32" class="text-[#0099FF]" />
               <span class="mx-3 text-gray-200">{{ item }}</span>
             </div>
@@ -56,5 +54,7 @@ onMounted(() => {
     </div>
   </section>
 </template>
+
+<style scoped></style>
 
 <style scoped></style>

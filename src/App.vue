@@ -4,7 +4,8 @@ import TheWelcome from '@/components/TheWelcome.vue'
 import HowItWorks from './components/HowItWorks.vue'
 import BeforeAfter from './components/BeforeAfter.vue'
 import Aboutme from './components/Aboutme.vue'
-import Plan from './components/Plan.vue'
+// import Plan from './components/Plan.vue'
+import PlanPresencial from './components/PlanPresencial.vue'
 import Footer from './components/Footer.vue'
 </script>
 
@@ -14,7 +15,7 @@ import Footer from './components/Footer.vue'
     <TheWelcome />
     <HowItWorks />
     <BeforeAfter />
-    <Plan />
+    <PlanPresencial />
     <Aboutme />
     <Footer />
   </header>
