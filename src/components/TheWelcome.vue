@@ -4,8 +4,10 @@ import { gsap } from 'gsap'
 import { RiWhatsappLine } from '@remixicon/vue'
 
 const especialidades = ref([
+  'Estética feminina',
+  'Hipertrofia',
   'Emagrecimento',
-  'Perca de 5kg a 10kg em 45 dias com meu método "Emagreça Já"'
+  'Ganhe até 3kg de músculo e Perca até 5kg de gordura em 45dias'
 ])
 
 const redirectWhattsap = () => {
@@ -41,11 +43,11 @@ onMounted(() => {
       <div class="items-center lg:flex">
         <div class="w-full lg:w-1/2">
           <h1 class="pt-4 text-3xl font-semibold text-white sm:pt-0 lg:text-4xl">
-            <span class="animate block">Acelere seu progresso,</span>
-            <span class="animate block">transforme a sua vida</span>
-            <p class="animate block text-[#0099FF]">impressione-se com seu resultado</p>
+            <span class="animate block">Ajudo as mulheres que querem</span>
+            <span class="animate block">tonificar pernas, glúteos</span>
+            <p class="animate block text-[#0099FF]">e secar a barriga</p>
           </h1>
-          <p class="animate mt-3 text-gray-400">Especialista em</p>
+          <p class="animate mt-3 text-gray-400">Expert em</p>
 
           <div class="mt-4 space-y-5">
             <p

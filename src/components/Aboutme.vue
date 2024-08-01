@@ -31,11 +31,11 @@
             <p class="mt-4 font-light leading-relaxed text-white">
               Meu nome é Rykelme Lucas, sou Personal Trainer formado e graduado em Educação Física.
               Com um vasto currículo que inclui mais de 20 cursos profissionalizantes na área, me
-              especializei em emagrecimento e desenvolvi o método <strong>"Emagreça Já"</strong>.
-              Este método inovador já auxiliou mais de 50 pessoas a atingirem seus objetivos de
-              forma eficaz e saudável. Com uma abordagem baseada em ciência e experiência prática,
-              me dedico a transformar vidas através de treinamentos personalizados e orientações
-              nutricionais.
+              especializei em estética feminina, hipertrofia e emagrecimento, e criei o método
+              "<strong class="font-semibold">Turbinando o Shape</strong>". Este método inovador já
+              auxiliou mais de 50 pessoas a atingirem seus objetivos de forma eficaz e saudável. Com
+              uma abordagem baseada em ciência e experiência prática, me dedico a transformar vidas
+              através de treinamentos personalizados e orientações nutricionais.
             </p>
           </div>
         </div>
