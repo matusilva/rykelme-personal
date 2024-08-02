@@ -6,7 +6,7 @@ import { RiInstagramLine, RiGithubFill, RiWhatsappLine } from '@remixicon/vue'
     <div
       class="container mx-auto flex flex-col items-center justify-between space-y-4 p-6 sm:flex-row sm:space-y-0"
     >
-      <p class="text-sm text-gray-300">© Copyright 2021. Todos os direitos reservados.</p>
+      <p class="text-sm text-gray-300">© Copyright 2024. Todos os direitos reservados.</p>
 
       <div class="-mx-2 flex">
         <a
@@ -28,14 +28,14 @@ import { RiInstagramLine, RiGithubFill, RiWhatsappLine } from '@remixicon/vue'
       </div>
 
       <p class="flex items-center text-xs text-gray-300">
-        Desenvolvido:
+        Desenvolvido por:
         <a
           href="https://github.com/matusilva"
           target="_blank"
-          class="mx-2 flex text-gray-300 transition-colors duration-300 hover:text-blue-400"
+          class="mx-2 flex text-gray-300 transition-colors duration-300 hover:text-blue-300 hover:underline"
           aria-label="Github"
         >
-          <RiGithubFill /> <span class="mx-1 flex items-center">Matheus Silva</span>
+          <RiGithubFill size="15" /> <span class="mx-1 flex items-center">Matheus Silva</span>
         </a>
       </p>
     </div>
