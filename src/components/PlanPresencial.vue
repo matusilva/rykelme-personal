@@ -61,6 +61,7 @@ onMounted(() => {
         >
           <div class="text-center">
             <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Mensal</p>
+            <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Presencial</p>
             <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">R$ 500/Mês</h4>
             <p class="mt-4 text-gray-500 dark:text-gray-300">4 semanas de treino</p>
           </div>
@@ -88,6 +89,7 @@ onMounted(() => {
         >
           <div class="text-center">
             <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Trimestral</p>
+            <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Presencial</p>
             <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">R$ 400/Mês</h4>
             <p class="mt-4 text-gray-500 dark:text-gray-300">12 semanas de treino</p>
           </div>
@@ -116,6 +118,7 @@ onMounted(() => {
           <div class="px-6 py-4">
             <div class="text-center">
               <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Semestral</p>
+              <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Presencial</p>
               <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">
                 R$ 350/Mês
               </h4>
@@ -151,8 +154,8 @@ onMounted(() => {
           <div class="px-6 py-4">
             <div class="text-center">
               <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Plano Anual</p>
-              <!-- <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Online</p>
-              <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$150,00</h4> -->
+              <p class="mt-4 text-gray-500 dark:text-gray-300">Consultoria Presencial</p>
+              <!-- <h4 class="mt-2 text-gray-600 line-through dark:text-gray-400">6x R$150,00</h4> -->
               <h4 class="mt-2 text-4xl font-semibold text-gray-800 dark:text-gray-100">
                 R$ 300/Mês
               </h4>
